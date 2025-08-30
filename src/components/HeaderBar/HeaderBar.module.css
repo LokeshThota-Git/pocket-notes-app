@@ -1,0 +1,29 @@
+.wrap{
+  position:sticky;
+  top:0;
+  z-index:5;
+  height:56px;
+  background:var(--blue);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  padding:0 14px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.badge{
+  width:28px;height:28px;border-radius:999px;
+  background:#fff;
+  color:var(--blue);
+  font-weight:700;
+  display:grid;place-items:center;
+  margin-right:10px;
+  font-size:12px;
+}
+
+.title{
+  font-size:16px;
+  font-weight:700;
+  margin:0;
+}

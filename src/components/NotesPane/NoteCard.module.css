@@ -1,0 +1,22 @@
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 1rem 0;
+  margin: 12px 0;
+  line-height: 160.2%;
+  letter-spacing: 3.5%;
+}
+.body {
+  font-size: 0.85rem;
+  color: #222;
+}
+.meta {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-weight: 600;
+  color:#353535;
+}

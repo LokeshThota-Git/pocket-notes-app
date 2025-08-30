@@ -1,0 +1,92 @@
+.wrap {
+  background: #ffffff;
+  padding: 16px 0 92px;
+  position: relative;
+  height: 100vh;
+  width: 22rem;
+  max-width: 22rem;
+  min-width: 22rem;
+  overflow: auto;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 2rem 0;
+  text-align: center;
+  position: sticky;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add {
+  margin-top: 1rem;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #16008b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+.addBtn {
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.unselectBtn {
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.unselect {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.unselect:hover {
+  background: #e0e0e0;
+  border-color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    padding: 16px 0 72px;
+  }
+  .title {
+    font-size: 2.5rem;
+    text-align: start;
+    margin-left: 3rem;
+  }
+
+  /* Hide unselect button on mobile */
+  .unselectBtn {
+    display: none;
+  }
+
+  /* Hide sidebar on mobile when a group is active */
+  .wrap[data-group-active="true"] {
+    display: none;
+  }
+}

@@ -1,0 +1,138 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  z-index: 20;
+}
+.box {
+  width: min(520px, 92vw);
+  background: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 2rem 2.5rem 0.8rem 2rem;
+}
+.title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.label span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.input {
+  
+  min-width: 20rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-radius: 0.95rem;
+  border: 1px solid #CCCCCC;
+  outline: none;
+  text-align: start;
+}
+input::placeholder {
+  font-size: 1rem;
+  opacity: 1;
+  color: #979797;
+}
+
+.input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.colors {
+  margin: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.labelText {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+.swatchRow {
+  display: flex;
+  gap: 10px;
+}
+.swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.swatchActive {
+  outline: 3px solid #e9ecff;
+  border-color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.create {
+  background: #001F8B;
+  color: #fff;
+  border: none;
+  width: 7rem;
+  height: 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.error {
+  color: #d61f1f;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: min(20rem);
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+  .title {
+    font-size: 1rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+  .label span {
+    font-size: 0.9rem;
+  }
+  .input {
+    padding: 0.3rem 0 0.3rem 1rem;
+    min-width: 6rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    font-weight: 500;
+  }
+  .labelText {
+    font-size: 0.9rem;
+  }
+  .swatch {
+    width: 20px;
+    height: 20px;
+  }
+  .actions{
+    margin:2rem 0 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+  }
+  .create {
+    width: 45vw;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

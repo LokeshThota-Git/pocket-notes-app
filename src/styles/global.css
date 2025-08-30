@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --bg: #0f0f10;
+  --panel: #ffffff;
+  --panel-muted: #f4f6fb;
+  --blue: #1834d1;
+  --blue-600: #0b1d9f;
+  --text: #11131a;
+  --muted: #7a8599;
+  --ring: rgba(24, 52, 209, 0.35);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  color: var(--text);
+  background: #1b1c1f;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #111216;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* thumb color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* hover effect */
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+
+/* “paper” frame shown in your mock */
+.canvas {
+  height: 100%;
+  background: #dce7f6;
+  border-left: 4px solid var(--blue);
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Toast overrides */
+.toast-success {
+  background: #22bb33 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+.toast-warning {
+  background: red !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+.toast-success .Toastify__progress-bar {
+  background: #219c26 !important;
+}
+.toast-warning .Toastify__progress-bar {
+  background: #e89516 !important;
+}

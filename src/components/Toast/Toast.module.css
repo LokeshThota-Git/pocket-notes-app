@@ -1,0 +1,13 @@
+/* Toast overrides */
+.toast-success {
+  background: #22bb33 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+.toast-warning {
+  background: #ffbb33 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+.toast-success .Toastify__progress-bar { background: #219c26 !important; }
+.toast-warning .Toastify__progress-bar { background: #e89516 !important; }
